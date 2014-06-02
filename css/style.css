@@ -1,0 +1,322 @@
+
+* {
+
+    margin: 0;
+
+    padding: 0;
+
+}
+
+body {
+
+    width: 1140px;
+
+    margin: 0 auto;
+
+    font-family: 'Roboto Condensed', 'Arial Narrow', sans-serif;
+
+    font-weight: 300;
+
+    background-color: #efefef;
+
+}
+
+#mastercontainer {
+
+    position: relative;
+
+    display: block;
+
+    overflow: hidden;
+
+}
+
+#background {
+
+    position: fixed;
+
+    display: block;
+
+    z-index: -1;
+
+}
+
+#background div {
+
+    margin: 0;
+
+    padding: 0;
+
+    height: 600px;
+
+}
+
+#background div img {
+
+    margin: 0;
+
+    padding: 0;
+
+    height: 600px;
+
+}
+
+#foreground {
+
+    z-index: 1;
+
+    position: relative;
+
+    display: block;
+
+    margin-top: 600px;
+
+}
+
+.contentslide {
+
+    background: url(ecailles.png) repeat;
+
+    background-color: white;
+
+    height: 400px;
+
+    box-shadow: 0px -10px 10px rgba(0, 0, 0, 0.05), 0px -5px 5px rgba(0, 0, 0, 0.05);
+
+}
+
+.steptext {
+
+    margin-top: 6rem;
+
+    float: left;
+
+}
+
+.stepimage {
+
+    margin-top: 3rem;
+
+    float: left;
+
+}
+
+.contentslide .steptext h5 {
+
+    color: #0099ff;
+
+    font-weight: lighter;
+
+    letter-spacing: 0.25rem;
+
+}
+
+.contentslide .steptext h3 {
+
+    color: #777;
+
+    font-weight: lighter;
+
+    font-size: 1.25rem;
+
+    margin-top: 1rem;
+
+    letter-spacing: 0.05rem;
+
+}
+
+.contentslide .steptext p {
+
+    margin-top: 0.5rem;
+
+    color: #555;
+
+    font-weight: lighter;
+
+    font-size: 1.0rem;
+
+    line-height: 1.5rem;
+
+}
+
+.emptyslide {
+
+    height: 600px;
+
+    width: 100%;
+
+    font-size: 0;
+
+}
+
+#feedbackslide {
+
+    padding-top: 3rem;
+
+    background: url(../img/ecailles.png) repeat;
+
+    background-color: white;
+
+    height: 200px;
+
+}
+
+#feedback-title {
+
+    padding-top: 2rem;
+
+    color: #0099ff;
+
+    letter-spacing: 1.5rem;
+
+    text-align: center;
+
+}
+
+#thumbsup,
+
+#thumbsdown {
+
+    height: 36px;
+
+    width: 36px;
+
+}
+
+#thumbsup {
+
+    background-image: url(../img/thumbsup-neutral.png);
+
+}
+
+#thumbsdown {
+
+    background-image: url(../img/thumbsdown-neutral.png);
+
+}
+
+#thumbsup:hover {
+
+    cursor: pointer;
+
+    background-image: url(../img/thumbsup-success.png);
+
+}
+
+#thumbsdown:hover {
+
+    cursor: pointer;
+
+    background-image: url(../img/thumbsdown-fail.png);
+
+}
+
+#footer {
+
+    height: 300px;
+
+    background-color: #444;
+
+}
+
+/* Animation CSS        */
+
+.animate-away {
+
+    -moz-transition: 1s ease-in-out;
+
+    -webkit-transition: 1s ease-in-out;
+
+    -o-transition: 1s ease-in-out;
+
+    -ms-transition: 1s ease-in-out;
+
+    transition: 1s ease-in-out;
+
+    /*
+-webkit-animation-fill-mode: forwards;
+-moz-animation-fill-mode: forwards;
+-ms-animation-fill-mode: forwards;
+-o-animation-fill-mode: forwards;
+animation-fill-mode: forwards;
+*/
+
+}
+
+.animate-back {
+
+    -moz-transition: 1s ease-in-out;
+
+    -webkit-transition: 1s ease-in-out;
+
+    -o-transition: 1s ease-in-out;
+
+    -ms-transition: 1s ease-in-out;
+
+    transition: 1s ease-in-out;
+
+    /*
+-webkit-animation-fill-mode: forwards;
+-moz-animation-fill-mode: forwards;
+-ms-animation-fill-mode: forwards;
+-o-animation-fill-mode: forwards;
+animation-fill-mode: forwards;
+*/
+
+}
+
+.stepimage.animate-away {
+
+    transform: translate(40em, 0);
+
+    -webkit-transform: translate(40em, 0);
+
+    -moz-transform: translate(40em, 0);
+
+    -o-transform: translate(40em, 0);
+
+    -ms-transform: translate(40em, 0);
+
+}
+
+.stepimage.animate-back {
+
+    transform: translate(0em, 0);
+
+    -webkit-transform: translate(0em, 0);
+
+    -moz-transform: translate(0em, 0);
+
+    -o-transform: translate(0em, 0);
+
+    -ms-transform: translate(0em, 0);
+
+}
+
+.steptext.animate-away {
+
+    transform: translate(-40em, 0);
+
+    -webkit-transform: translate(-40em, 0);
+
+    -moz-transform: translate(-40em, 0);
+
+    -o-transform: translate(-40em, 0);
+
+    -ms-transform: translate(-40em, 0);
+
+}
+
+.steptext.animate-back {
+
+    transform: translate(0em, 0);
+
+    -webkit-transform: translate(0em, 0);
+
+    -moz-transform: translate(0em, 0);
+
+    -o-transform: translate(0em, 0);
+
+    -ms-transform: translate(0em, 0);
+
+}
