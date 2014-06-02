@@ -7,13 +7,85 @@
     <link rel="stylesheet" href="/css/1140.css">
     <link rel="stylesheet" href="/css/style.min.css">
     <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300' rel='stylesheet' type='text/css'>
+    <style>
+        #navbar{
+            position: fixed;
+            background-color: #333;
+            color: #ddd;
+            height: 3rem;
+            margin: 0;
+            padding: 0;
+            width: 1140px;
+            font-size: 1rem;
+            box-shadow: 0px 2px 2px rgba(0,0,0,0.25);
+            z-index: 5;
+        }
+        
+        #navbar div{
+            padding-top: 0.75rem;
+        }
+        
+        #navbar div a{
+            text-decoration: none;
+            color: #fff;
+            letter-spacing: 0.125rem;
+            font-size: .875rem;
+            cursor: pointer;
+        }
+        
+        #register-button{
+            background-color: rgb(0,0196,240);
+            padding-left: 1rem;
+            padding-right: 1rem;
+            padding-top: 0.25rem;
+            padding-bottom: 0.25rem;
+        }
+        #register-button:hover{
+            background-color: rgb(0,183,221);
+            padding-top: 0.125rem;
+            padding-bottom: 0.125rem;
+        }
+        
+        #login-button{
+            background-color: rgb(100, 225, 115);
+            padding-left: 1rem;
+            padding-right: 1rem;
+            padding-top: 0.25rem;
+            padding-bottom: 0.25rem;
+        }
+        
+        #login-button:hover{
+            background-color: rgb(97, 197, 101);
+            padding-top: 0.125rem;
+            padding-bottom: 0.125rem;
+        }
+        
+        #slidenav{
+            position: fixed;
+            z-index: 10;
+            padding-top: 5rem;
+            margin-left: 1100px;
+        }
+        
+        #slidenav ul{
+            list-style-type: none;
+        }
+        
+        #slidenav ul li a{
+            color: #ddd;
+            width: 10px;
+            height: 10px;
+        }
+    
+    </style>
 </head>
 
 <body>
     <div id="mastercontainer">
-
+        
+<!--        Background-->
         <div id="background">
-            <div>
+            <div >
                 <img src="/img/bg-01-capture.jpg" alt="capture-videos">
             </div>
             <div>
@@ -22,7 +94,7 @@
             <div>
                 <img src="/img/bg-03-settings.jpg" alt="enter-settings">
             </div>
-            <div>
+            <div id="image4">
                 <img src="/img/bg-04-analyze.jpg" alt="analyze-videos">
             </div>
             <div>
@@ -32,9 +104,32 @@
                 <img src="/img/bg-06-download.jpg" alt="download-ouputs">
             </div>
         </div>
+        
+<!--        Top Nav Bar-->
+        <div id="navbar" class="navbar container12">
+                <div class="column2"><a href="http://www.providanz.com"><img src="img/providanz-logo-medium.png" alt="providanz-medium-logo"></a></div>
+                <div class="column1"><a href="#">HOME</a></div>
+                <div class="column1"><a href="#">HOW TO</a> </div>
+                <div class="column1"><a href="http://providanz.com/register" id="register-button">REGISTER</a> </div>
+                <div class="column1 prefix6"><a href="http://providanz.com/login" id="login-button">LOGIN</a></div>
+        </div>
 
+<!--Vertical Slide Nav Bar-->
+        <div id="slidenav">
+            <ul>
+                <li><a href="#slide1"><img src="img/grey-button.png" alt=""></a></li>
+                <li><a href="#slide2"><img src="img/grey-button.png" alt=""></a></li>
+                <li><a href="#slide3"><img src="img/grey-button.png" alt=""></a></li>
+                <li><a href="#image4"><img src="img/grey-button.png" alt=""></a></li>
+                <li><a href="#slide5"><img src="img/grey-button.png" alt=""></a></li>
+                <li><a href="#slide6"><img src="img/grey-button.png" alt=""></a></li>
+            </ul>
+        </div>
+
+
+<!--        Foreground-->
         <div id="foreground" class="container12">
-
+            
             <div id="slide1" class="contentslide">
                 <div class="steptext column4 prefix1">
                     <h5 class="step-label">STEP 1</h5>
@@ -64,7 +159,7 @@ and enter project details including the details used to capture the videos</p>
 
             <div id="slide3" class="contentslide">
                 <div class="steptext column4 prefix1">
-                    <h5 class="step-label">STEP 3</h5>
+                    <h5 class="step-label" id="">STEP 3</h5>
                     <h3>ENTER PROJECT SETTINGS & STATION DETAILS</h3>
                     <p>Enable or disable task category and value-add  analysis options,  and
 enter all the required settings</p>
